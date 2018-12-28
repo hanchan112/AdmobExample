@@ -1,4 +1,4 @@
-package com.framgia.lupx.admob.example;
+package com.admob.example;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void requestAds(){
-        banner = (AdView)findViewById(R.id.banner);
+        banner = findViewById(R.id.banner);
         AdRequest adRequest = new AdRequest.Builder().build();
         banner.setAdListener(new AdListener() {
             @Override
